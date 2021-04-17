@@ -1,0 +1,21 @@
+
+/* deiixar somete a pag home visivel*/
+#home{
+    display: block;
+}
+
+#login{
+    display: none;
+}
+
+#criarConta{
+    display: none;
+}
+
+#reservas{
+    display: none;
+}
+
+#confirm{
+    display: none;
+}
