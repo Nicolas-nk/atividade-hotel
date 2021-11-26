@@ -24,44 +24,42 @@
             <header> <!--cabeçalho-->
 
                 <nav>
-                    <div id="painel-menu">
+                    <div id="menu">
+                            <input type="checkbox" id="check" >
+                            <label for="check" id="lines">
+                                <span class="lines"></span>
+                                <span class="lines"></span>
+                                <span class="lines"></span> 
+                            </label>
 
-                        <div id="menu">
-                            <input type="checkbox">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <div id="user">
+                                <a href="javascript:navegacao(4)" target="_self">
+                                    <img src="images/u57.svg" alt="usuario">
+                                </a>
+                            </div> 
 
-                            <ul>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
-                                <li><a href=""></a></li>
+                            <ul id="list-links">
+                                <li><a href="javascript:navegacao(1);" target="_self">Home</a></li>
+                                <li><a href="javascript:navegacao(2);" target="_self">Login</a></li>
+                                <li><a href="javascript:navegacao(3);" target="_self">Reservas</a></li>
+                                <li><a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a></li>
                             </ul>
-                        </div>
-
-                        <div id="user">
-                            <a href="">
-                                <img src="images/u57.svg" alt="usuario">
-                            </a>
-                        </div> 
-
                     </div>
+
+                    <img src="images/Nicolas-hotel.png" alt="logo" id="logo-nav">
+
+                    <a href="#_nossos-quartos" id="skip-down">
+                        <img src="images/u52.svg" alt="descer página">
+                    </a>
+                    
                 </nav>
+                
 
-                <img src="images/home-fundo1.png" alt="fundo">
-                <img src="images/Nicolas-hotel.png" alt="logo">
-
-                <div id="skip-down">
-                    <input type="checkbox">
-                    <img src="images/u52.svg" alt="descer página">
-                </div>
-
-                <img src="images/layered-waves-haikei.png">
-            </header>
+                <img src="images/layered-waves-haikei.png" class="layered-waves">
+            </header>    
 
             <main> <!--corpo da pag-->
-                <img src="images/layered-waves-haikei (1).png">
+                <img src="images/layered-waves-haikei (1).png" class="layered-waves">
 
                 <section id="reserva">
                     <h2>FAÇA SUA RESERVA</h2>
@@ -190,47 +188,135 @@
 
         <article id="login"> <!--página de login-->
             <header> <!--cabeçalho-->
+                <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
+                <h1>Bem vindo de volta!</h1>
             </header>
 
             <main> <!--corpo da pag-->
+                <form action="">
+                    <input type="text" placeholder="Endereço de email ou nome">
+                    <input type="password" placeholder="Senha">
+                    <input type="button" value="Entrar">
+                </form>
             </main>
 
             <footer> <!--rodapé da pag-->
+                <hr>
+                <p>Não tem uma conta?</p>
+                <a href="javascript:navegacao(4);" target="_self">Registre-se já!</a>
+                <hr>
             </footer>
         </article>
 
 
         <article id="criarConta"> <!--página de criar conta-->
             <header> <!--cabeçalho-->
+                <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
+                <h1>Insira as informações abaixo</h1>
             </header>
 
             <main> <!--corpo da pag-->
+                <form action="">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Confirme o email">
+                    <input type="password" placeholder="Senha">
+                    <input type="text" placeholder="Como devemos te chamar">
+                    <label for="aniversario">Data de aniversário</label>
+                    <div>
+                        <input type="number" name="dia" min="1" max="31">
+                        <select name="mes">
+                            <option value="janeiro">Janeiro</option>
+                            <option value="fevereiro">Fevereiro</option>
+                            <option value="março">Março</option>
+                            <option value="abril">Abril</option>
+                            <option value="maio">Maio</option>
+                            <option value="junho">Junho</option>
+                            <option value="julho">Julho</option>
+                            <option value="agosto">Agosto</option>
+                            <option value="setembro">Setembro</option>
+                            <option value="outubro">Outubro</option>
+                            <option value="novembro">Novembro</option>
+                            <option value="dezembro">Dezembro</option>
+                        <input type="number" name="ano" min="1900" max="2099" step="1" value="2021" />
+                        </select>
+                    </div>
+                    <input type="checkbox" name="permicao"><label for="permicao">Quero receber e-mails de ofertas e promoções</label>
+                    <input type="checkbox" name="permicao"><label for="permicao">Eu aceito os <a href="">Termos & Condições</a> e a <a href="">Politica de privacidade</a></label>
+                    <input type="button" value="Entrar">
+                </form>
             </main>
 
             <footer> <!--rodapé da pag-->
+                <hr>
+                <p>Já tem uma conta?</p>
+                <a href="javascript:navegacao(2);" target="_self">Login</a>
+                <hr>
             </footer>
         </article>
 
 
         <article id="reservas"> <!--página de fazer reservas-->
             <header> <!--cabeçalho-->
+                <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
+                <h1>Insira as informações abaixo</h1>
             </header>
 
             <main> <!--corpo da pag-->
+                <form action="">
+                    <input type="date" placeholder="Check in">
+                    <input type="date" placeholder="Check out">
+                    <div>
+                        <select name="suite">
+                            <option value="basic">Suite Basic</option>
+                            <option value="delux">Suite Delux</option>
+                        </select>
+                    </div>
+                    <input type="number" name="adultus" placeholder="Adultos">
+                    <input type="number" name="criancas" placeholder="Crianças">
+                    <input type="text" placeholder="Tem algum código promocional?">
+                    <input type="button" value="Proxímo" onclick="javascript:navegacao(5);">
+                </form>
             </main>
 
             <footer> <!--rodapé da pag-->
+                <hr>
+                <p>Ainda não fez login?</p>
+                <a href="javascript:navegacao(2);" target="_self">Login</a>
+                <hr>
             </footer>
         </article>
 
         <article id="confirm"> <!--página de confirmação de dados-->
             <header> <!--cabeçalho-->
+                <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
+                <h1>Estamos quase lá</h1>
             </header>
 
             <main> <!--corpo da pag-->
+                <form action="">
+                    <input type="text" placeholder="Nome completo">
+                    <input type="text" placeholder="CPF">
+                    <input type="text" placeholder="CEP">
+                    <input type="text" placeholder="Nº da residencia">
+                    <input type="text" placeholder="Complemento">
+                    <div>
+                        <select name="suite">
+                            <option value="basic">Suite Basic</option>
+                            <option value="delux">Suite Delux</option>
+                        </select>
+                    </div>
+                    <input type="number" name="adultus" placeholder="Adultos">
+                    <input type="number" name="criancas" placeholder="Crianças">
+                    <input type="text" placeholder="Tem algum código promocional?">
+                    <input type="button" value="Proxímo" onclick="javascript:navegacao(5);">
+                </form>
             </main>
 
             <footer> <!--rodapé da pag-->
+                <hr>
+                <p>Ou</p>
+                <a href="https://web.whatsapp.com/" target="_blank">Seja atendido via WhatsApp</a>
+                <hr>
             </footer>
         </article>
 
