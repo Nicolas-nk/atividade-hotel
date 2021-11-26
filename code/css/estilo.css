@@ -229,14 +229,14 @@ input#check:checked ~ #list-links{
     color: #fff;
     font-weight: 300;
     font-size: 15px;
-    background-color: #0C1B33;
+    background-color: #041430;
     padding: 10px 35px;
     margin: 0 10px;
     transition: 0.5s;
 }
 
 #btn-reserva a:first-of-type:hover{
-    color: #0C1B33;
+    color: #041430;
     font-weight: 500;
     background-color: #fff;
     padding: 10px 35px;
@@ -266,5 +266,47 @@ input#check:checked ~ #list-links{
 }
 
 /*nossos quartos*/
+#quartos{
+    background-color: #041430;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+#quartos h2{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+
+/*gastronomia*/
+#gastronomia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #041430;
+    padding: 0 25px;
+}
+
+#gastronomia h2{
+    text-align: start;
+    color: #fff;
+    font-weight: 300;
+    font-size: 26px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gastronomia-div{
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    margin: 10px;
+}
+
+.gastronomia-div img{
+    width: 100px;
+    height: 100px;
+}
 /*---------------FIM ESTILO CORPO---------------*/
