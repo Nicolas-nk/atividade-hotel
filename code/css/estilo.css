@@ -19,6 +19,11 @@
     display: none;
 }
 
+/*fonte*/
+#container{
+    font-family: 'Raleway', sans-serif;
+}
+
 /*demarcações de responsividade*/
 @media only screen and (max-width:480px) {
     
@@ -185,3 +190,81 @@ input#check:checked ~ #list-links{
 }
 
 /*---------------FIM ESTILO CABEÇALHO---------------*/
+
+/*---------------ESTILO CORPO---------------*/
+
+/*Reserva*/
+#reserva{
+    background-image: url(../images/callToAction.png);
+    background-position: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#reserva h2{
+    font-weight: 300;
+    color: #FF9F00;
+    font-size: 40px;
+    padding: 0 15px;
+}
+
+#reserva p{
+    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+#btn-reserva{
+    margin: 100px 0 50px 0;
+}
+
+#btn-reserva a{
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#btn-reserva a:first-of-type{
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    background-color: #0C1B33;
+    padding: 10px 35px;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+#btn-reserva a:first-of-type:hover{
+    color: #0C1B33;
+    font-weight: 500;
+    background-color: #fff;
+    padding: 10px 35px;
+    margin: 0 10px;
+}
+
+#btn-reserva a:last-of-type{
+    color: #FF9F00;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 8px 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FF9F00;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+#btn-reserva a:last-of-type:hover{
+    color: #FFF;
+    font-weight: 500;
+    padding: 8px 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #FFF;
+    margin: 0 10px;
+}
+
+/*nossos quartos*/
+
+/*---------------FIM ESTILO CORPO---------------*/

@@ -13,6 +13,11 @@
     <link rel=stylesheet media="screen and (max-width:480px)" href="css/estiloMobile.css">
     <link rel=stylesheet media="screen and (min-width:481px)" href="css/estiloOthers.css">
 
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <!--JavaScript-->
     <script src="script/js.js"></script>
 </head>
@@ -59,19 +64,20 @@
             </header>    
 
             <main> <!--corpo da pag-->
-                <img src="images/layered-waves-haikei (1).png" class="layered-waves">
 
                 <section id="reserva">
+                    <img src="images/layered-waves-haikei (1).png" class="layered-waves">
                     <h2>FAÇA SUA RESERVA</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                         Aenean euismod bibendum laoreet. Proin gravida dolor
                         sit amet lacus accumsan et viverra justo commodo. 
                         Proin sodales </p>
-
-                        <a href="">reservar</a>
-                        <a href="">login</a>
+                    <div id="btn-reserva">
+                        <a href="javascript:navegacao(3);">reservar</a>
+                        <a href="javascript:navegacao(2);">login</a>
+                    </div>    
                 </section>
-                <section>
+                <section id="quartos">
                     <h2>Nossos quartos</h2>
 
                     <div>
@@ -180,7 +186,9 @@
                 </div>
 
                 <div>
+                    <hr>
                     <p>Desing: Nicolas INI2BT imagens: canva.com</p>
+                    <hr>
                 </div>
             </footer>
         </article>
