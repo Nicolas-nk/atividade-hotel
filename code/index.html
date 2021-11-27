@@ -38,22 +38,22 @@
                             </label>
 
                             <div id="user">
-                                <a href="javascript:navegacao(4)" target="_self">
+                                <a href="javascript:navegacao(4)" target="_self" onclick="document.getElementById('lista').style.display= none">
                                     <img src="images/u57.svg" alt="usuario">
                                 </a>
                             </div> 
 
                             <ul id="list-links">
-                                <li><a href="javascript:navegacao(1);" target="_self">Home</a></li>
-                                <li><a href="javascript:navegacao(2);" target="_self">Login</a></li>
-                                <li><a href="javascript:navegacao(3);" target="_self">Reservas</a></li>
-                                <li><a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a></li>
+                                <li><a href="javascript:navegacao(1);" target="_self" onclick="javascript:hideMenu()">Home</a></li>
+                                <li><a href="javascript:navegacao(2);" target="_self" onclick="javascript:hideMenu()">Login</a></li>
+                                <li><a href="javascript:navegacao(3);" target="_self" onclick="javascript:hideMenu()">Reservas</a></li>
+                                <li><a href="https://web.whatsapp.com/" target="_blank" onclick="javascript:hideMenu()">WhatsApp</a></li>
                             </ul>
                     </div>
 
                     <img src="images/Nicolas-hotel.png" alt="logo" id="logo-nav">
 
-                    <a href="#_nossos-quartos" id="skip-down">
+                    <a href="#reserva" id="skip-down">
                         <img src="images/u52.svg" alt="descer página">
                     </a>
                     
@@ -80,7 +80,7 @@
                 <section id="quartos">
                     <h2>Nossos quartos</h2>
 
-                    <img src="./images/" alt="">
+                    <img src="./images/quarto1.png" alt="">
                     <div>
                         <h3>Suite Basic</h3>
                         <p>Lorem ipsum dolor sit
@@ -94,7 +94,7 @@
                            sic tempor. Sociis natoque 
                         </p>
                     </div>
-                        
+                    <div>
                         <p>Lorem ipsum dolor sit
                             amet, consectetur 
                             adipiscing elit. Aenean
@@ -105,9 +105,10 @@
                             Proin sodales pulvinar 
                             sic tempor. Sociis natoque 
                          </p>
-                         <img src="./images/" alt="">
+                    </div>     
+                         <img src="./images/quartoA.png" alt="">
 
-                    <img src="./images/" alt="">
+                    <img src="./images/quarto2.png" alt="">
                     <div>    
                         <h3>Suite Delux</h3>
                         <p>Lorem ipsum dolor sit
@@ -121,7 +122,7 @@
                            sic tempor. Sociis natoque 
                         </p>
                     </div>
-
+                    <div>
                         <p>Lorem ipsum dolor sit
                             amet, consectetur 
                             adipiscing elit. Aenean
@@ -132,15 +133,114 @@
                             Proin sodales pulvinar 
                             sic tempor. Sociis natoque 
                          </p>
-                         <img src="./images/" alt="">
+                    </div>     
+                         <img src="./images/quartoB.png" alt="">
                     
 
                 </section>
                 <img src="images/layered-waves-haikei (2).png" class="layered-waves">
 
-                <section>
+                <section id="carrossel">
                     <h2>Serviços oferecidos</h2>
-                    <!--Carrosel-->
+                    <section class="carousel" aria-label="Gallery">
+
+                        <ol class="carousel__viewport">
+
+                          <li id="carousel__slide1"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <div class="carousel__snapper">
+                              
+                            </div>
+                          </li>
+
+                          <li id="carousel__slide2"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            
+                          </li>
+
+                          <li id="carousel__slide3"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            
+                          </li>
+
+                          <li id="carousel__slide4"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            
+                          </li>
+
+                          <li id="carousel__slide5"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            
+                          </li>
+
+                          <li id="carousel__slide6"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            
+                          </li>
+
+                          <li id="carousel__slide7"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            
+                          </li>
+                          
+                        </ol>
+
+
+                        <aside class="carousel__navigation">
+                          <ol class="carousel__navigation-list">
+
+                            <li class="carousel__navigation-item">
+                              <a href="#carousel__slide1"
+                                 class="carousel__navigation-button">Go to slide 1</a>
+                            </li>
+
+                            <li class="carousel__navigation-item">
+                              <a href="#carousel__slide2"
+                                 class="carousel__navigation-button">Go to slide 2</a>
+                            </li>
+
+                            <li class="carousel__navigation-item">
+                              <a href="#carousel__slide3"
+                                 class="carousel__navigation-button">Go to slide 3</a>
+                            </li>
+
+                            <li class="carousel__navigation-item">
+                              <a href="#carousel__slide4"
+                                 class="carousel__navigation-button">Go to slide 4</a>
+                            </li>
+
+                            <li class="carousel__navigation-item">
+                              <a href="#carousel__slide5"
+                                 class="carousel__navigation-button">Go to slide 5</a>
+                            </li>
+
+                            <li class="carousel__navigation-item">
+                              <a href="#carousel__slide6"
+                                 class="carousel__navigation-button">Go to slide 6</a>
+                            </li>
+
+                            <li class="carousel__navigation-item">
+                              <a href="#carousel__slide7"
+                                 class="carousel__navigation-button">Go to slide 7</a>
+                            </li>
+
+                          </ol>
+                        </aside>
+
+                      </section>
                 </section>
                 
                 <img src="images/layered-waves-haikei (3).png" class="layered-waves">
@@ -182,24 +282,24 @@
                             euismod bibendum 
                         </p>
                     </div>
-                    
                 </section>
+                <img src="images/layered-waves-haikei (2).png" class="layered-waves">
             </main>
 
             <footer> <!--rodapé da pag-->
                 <h3>Entre em contato</h3>
                 <h4>Lorem ipsum amet pede vel arcu aliquet pretium</h4>
 
-                <div>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
+                <div id="contato">
+                    <a href=""><img src="./images/instagram.svg" alt=""></a>
+                    <a href=""><img src="./images/facebook.svg" alt=""></a>
+                    <a href=""><img src="./images/whatsapp.svg" alt=""></a>
+                    <a href=""><img src="./images/mail.svg" alt=""></a>
                 </div>
 
-                <div>
+                <div id="creditos">
                     <hr>
-                    <p>Desing: Nicolas INI2BT imagens: canva.com</p>
+                    <p><b>Desing:</b> Nicolas INI2BT <b>imagens:</b> canva.com</p>
                     <hr>
                 </div>
             </footer>
@@ -207,137 +307,168 @@
 
 
         <article id="login"> <!--página de login-->
-            <header> <!--cabeçalho-->
-                <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
-                <h1>Bem vindo de volta!</h1>
-            </header>
+            <div class="glass">
+                <div id="container-login">
+                    <header> <!--cabeçalho-->
+                        <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
+                        <h1>Bem vinde de volta!</h1>
+                    </header>
 
-            <main> <!--corpo da pag-->
-                <form action="">
-                    <input type="text" placeholder="Endereço de email ou nome">
-                    <input type="password" placeholder="Senha">
-                    <input type="button" value="Entrar">
-                </form>
-            </main>
+                    <main> <!--corpo da pag-->
+                        <form action="login">
+                            <input type="text" placeholder="Endereço de email ou nome">
+                            <input type="password" placeholder="Senha">
+                            <input type="button" value="Entrar" class="btn-form">
+                        </form>
+                    </main>
 
-            <footer> <!--rodapé da pag-->
-                <hr>
-                <p>Não tem uma conta?</p>
-                <a href="javascript:navegacao(4);" target="_self">Registre-se já!</a>
-                <hr>
-            </footer>
+                    <footer> <!--rodapé da pag-->
+                        <hr>
+                        <p>Não tem uma conta?</p>
+                        <a href="javascript:navegacao(4);" target="_self" class="btn-footer">Registre-se já!</a>
+                        <hr>
+                        <p> <a href="">Termos & Condições</a> e <a href="">Politicas de Privacidade</a></p>
+                    </footer>
+                </div>
+            </div>
         </article>
 
 
         <article id="criarConta"> <!--página de criar conta-->
-            <header> <!--cabeçalho-->
-                <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
-                <h1>Insira as informações abaixo</h1>
-            </header>
+            <div class="glass">
+                <div id="container-criarConta">
+                    <header> <!--cabeçalho-->
+                        <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
+                        <h1>Insira as informações abaixo!</h1>
+                    </header>
 
-            <main> <!--corpo da pag-->
-                <form action="">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Confirme o email">
-                    <input type="password" placeholder="Senha">
-                    <input type="text" placeholder="Como devemos te chamar">
-                    <label for="aniversario">Data de aniversário</label>
-                    <div>
-                        <input type="number" name="dia" min="1" max="31">
-                        <select name="mes">
-                            <option value="janeiro">Janeiro</option>
-                            <option value="fevereiro">Fevereiro</option>
-                            <option value="março">Março</option>
-                            <option value="abril">Abril</option>
-                            <option value="maio">Maio</option>
-                            <option value="junho">Junho</option>
-                            <option value="julho">Julho</option>
-                            <option value="agosto">Agosto</option>
-                            <option value="setembro">Setembro</option>
-                            <option value="outubro">Outubro</option>
-                            <option value="novembro">Novembro</option>
-                            <option value="dezembro">Dezembro</option>
-                        <input type="number" name="ano" min="1900" max="2099" step="1" value="2021" />
-                        </select>
-                    </div>
-                    <input type="checkbox" name="permicao"><label for="permicao">Quero receber e-mails de ofertas e promoções</label>
-                    <input type="checkbox" name="permicao"><label for="permicao">Eu aceito os <a href="">Termos & Condições</a> e a <a href="">Politica de privacidade</a></label>
-                    <input type="button" value="Entrar">
-                </form>
-            </main>
+                    <main> <!--corpo da pag-->
+                        <form action="">
+                            <input type="text" placeholder="Email" class="input">
+                            <input type="text" placeholder="Confirme o email" class="input">
+                            <input type="password" placeholder="Senha" class="input">
+                            <input type="text" placeholder="Como devemos te chamar" class="input">
+                            <div class="texto-esquerda texto-aniversario">
+                                <label>Data de aniversário</label>
+                            </div>
+                            <div id="aniversario">
+                                <input type="number" name="dia" min="1" max="31" placeholder="Dia" class="input">
+                                <select name="mes">
+                                    <option value="" disabled selected hidden>Mês</option>
+                                    <option value="janeiro">Janeiro</option>
+                                    <option value="fevereiro">Fevereiro</option>
+                                    <option value="março">Março</option>
+                                    <option value="abril">Abril</option>
+                                    <option value="maio">Maio</option>
+                                    <option value="junho">Junho</option>
+                                    <option value="julho">Julho</option>
+                                    <option value="agosto">Agosto</option>
+                                    <option value="setembro">Setembro</option>
+                                    <option value="outubro">Outubro</option>
+                                    <option value="novembro">Novembro</option>
+                                    <option value="dezembro">Dezembro</option>
+                                </select>
+                                <input type="number" name="ano" min="1900" max="2099" step="1"  placeholder="Ano" class="input"/>
+                            </div>
+                            <div class="texto-esquerda">
+                                <div class="termos">
+                                    <input type="checkbox" name="permissao" class="checkbox">
+                                    <label>Quero receber e-mails de ofertas e promoções</label>
+                                </div>
+                                <div class="termos">
+                                    <input type="checkbox" name="permissao" class="checkbox">
+                                    <label>Eu aceito os <a href="">Termos & Condições</a> e a <a href="">Politica de privacidade</a></label>
+                                </div>
+                            </div>
+                            <input type="button" value="inscreva-se" class="btn-form">
+                            
+                        </form>
+                    </main>
 
-            <footer> <!--rodapé da pag-->
-                <hr>
-                <p>Já tem uma conta?</p>
-                <a href="javascript:navegacao(2);" target="_self">Login</a>
-                <hr>
-            </footer>
+                    <footer> <!--rodapé da pag-->
+                        <hr>
+                        <p>Já tem uma conta?</p>
+                        <a href="javascript:navegacao(2);" target="_self" class="btn-footer">Login</a>
+                        <hr>
+                    </footer>
+                </div>    
+            </div>        
         </article>
 
 
         <article id="reservas"> <!--página de fazer reservas-->
-            <header> <!--cabeçalho-->
-                <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
-                <h1>Insira as informações abaixo</h1>
-            </header>
+            <div class="glass">
+                <div id="container-reservas">
+                    <header> <!--cabeçalho-->
+                        <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
+                        <h1>Insira as informações abaixo!</h1>
+                    </header>
 
-            <main> <!--corpo da pag-->
-                <form action="">
-                    <input type="date" placeholder="Check in">
-                    <input type="date" placeholder="Check out">
-                    <div>
-                        <select name="suite">
-                            <option value="basic">Suite Basic</option>
-                            <option value="delux">Suite Delux</option>
-                        </select>
-                    </div>
-                    <input type="number" name="adultus" placeholder="Adultos">
-                    <input type="number" name="criancas" placeholder="Crianças">
-                    <input type="text" placeholder="Tem algum código promocional?">
-                    <input type="button" value="Proxímo" onclick="javascript:navegacao(5);">
-                </form>
-            </main>
+                    <main> <!--corpo da pag-->
+                        <form action="">
+                            <div id="datas">
+                                <input placeholder="Check in" class="textbox-n" type="text" onfocus="(this.type='date')" id="check-in">
+                                <input placeholder="Check out" class="textbox-n" type="text" onfocus="(this.type='date')" id="check-out">
+                            </div>
+                            <select name="suite" id="suites">
+                                <option value="basic">Suite Basic</option>
+                                <option value="delux">Suite Delux</option>
+                            </select>
+                            <div id="pessoas">
+                                <input type="number" name="adultus" placeholder="Adultos">
+                                <input type="number" name="criancas" placeholder="Crianças">
+                            </div>
+                            <input type="text" placeholder="Tem algum código promocional?" id="codigo">
+                            <input type="button" value="Proxímo" onclick="javascript:navegacao(5);" class="btn-form">
+                        </form>
+                    </main>
 
-            <footer> <!--rodapé da pag-->
-                <hr>
-                <p>Ainda não fez login?</p>
-                <a href="javascript:navegacao(2);" target="_self">Login</a>
-                <hr>
-            </footer>
+                    <footer> <!--rodapé da pag-->
+                        <hr>
+                        <p>Ainda não fez login?</p>
+                        <a href="javascript:navegacao(2);" target="_self" class="btn-footer">Login</a>
+                        <hr>
+                        <p> <a href="">Termos & Condições</a> e <a href="">Politicas de Privacidade</a></p>
+                    </footer>
+                </div>
+            </div>  
         </article>
 
         <article id="confirm"> <!--página de confirmação de dados-->
-            <header> <!--cabeçalho-->
-                <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
-                <h1>Estamos quase lá</h1>
-            </header>
+            <div class="glass">
+                <div id="container-confirm">
+                    <header> <!--cabeçalho-->
+                        <a href="javascript:navegacao(1);" target="_self"><img src="images/Nicolas-hotel.png" alt="logo"></a>
+                        <h1>Estamos quase lá!</h1>
+                    </header>
 
-            <main> <!--corpo da pag-->
-                <form action="">
-                    <input type="text" placeholder="Nome completo">
-                    <input type="text" placeholder="CPF">
-                    <input type="text" placeholder="CEP">
-                    <input type="text" placeholder="Nº da residencia">
-                    <input type="text" placeholder="Complemento">
-                    <div>
-                        <select name="suite">
-                            <option value="basic">Suite Basic</option>
-                            <option value="delux">Suite Delux</option>
-                        </select>
-                    </div>
-                    <input type="number" name="adultus" placeholder="Adultos">
-                    <input type="number" name="criancas" placeholder="Crianças">
-                    <input type="text" placeholder="Tem algum código promocional?">
-                    <input type="button" value="Proxímo" onclick="javascript:navegacao(5);">
-                </form>
-            </main>
+                    <main> <!--corpo da pag-->
+                        <form action="">
+                            <input type="text" placeholder="Nome completo">
+                            <input type="text" placeholder="CPF">
+                            <div id="endereco">
+                                <input type="text" placeholder="CEP">
+                                <input type="text" placeholder="Nº da residencia">
+                            </div>
+                            <input type="text" placeholder="Complemento">
+                            <div class="texto-esquerda texto-confirm">
+                                <label>Confime o seu login</label>
+                            </div>
+                            <input type="text" placeholder="Endereço de email ou nome">
+                            <input type="password" placeholder="Senha">
+                            <input type="button" value="reservar" onclick="javascript:navegacao(1);" class="btn-form">
+                        </form>
+                    </main>
 
-            <footer> <!--rodapé da pag-->
-                <hr>
-                <p>Ou</p>
-                <a href="https://web.whatsapp.com/" target="_blank">Seja atendido via WhatsApp</a>
-                <hr>
-            </footer>
+                    <footer> <!--rodapé da pag-->
+                        <hr>
+                        <p>Ou</p>
+                        <a href="https://web.whatsapp.com/" target="_blank" class="btn-footer">Seja atendido via WhatsApp</a>
+                        <hr>
+                        <p> <a href="">Termos & Condições</a> e <a href="">Politicas de Privacidade</a></p>
+                    </footer>
+                </div>
+            </div>        
         </article>
 
     </div>

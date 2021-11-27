@@ -45,3 +45,7 @@ function navegacao(x){
         document.getElementById("confirm").style.display="block";
     }
 }
+
+function hideMenu(){
+    document.getElementById('check').checked = false;
+}
